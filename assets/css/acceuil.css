@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --grey-color: #384454;
+    --blue-color: #0A101B;    
+    --black-color: #0C0F0A;    
+    --yellow-color: #FCFE19;    
+    --red-color: #A7001E;    
+    --white-color: #FFFFFF;    
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+body{
+    background-color: var(--blue-color);
+}
+
+/*section navigation*/
