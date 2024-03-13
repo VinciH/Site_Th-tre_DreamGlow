@@ -5,28 +5,57 @@
 }
 
 :root{
-    --grey-color: #384454;
-    --blue-color: #0A101B;    
+    --grey-color: #3844542f;
+    --blue-color: #0a101b;    
     --black-color: #0C0F0A;    
     --yellow-color: #FCFE19;    
-    --red-color: #A7001E;    
+    --red-color: #a7001f5d;    
     --white-color: #FFFFFF;    
 }
 
 .container{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
 body{
     background-color: var(--blue-color);
     color: var(--white-color);
+}
+.up-bar {
+    border-top: #bcbbbd17 4.5px solid;
+    position: relative;
+    top: 20vh;
+    width: 88%;
+    margin: 0 auto ;
+    z-index: 1;
+}
+.left-bar {
+    border-left: #bcbbbd17 3px solid;
+    position: fixed;
+    height: 800px;
+    left: 6%;
+    z-index: 1;
+}
+.right-bar {
+    border-right: #bcbbbd17 3px solid;
+    position: fixed;
+    height: 800px;
+    right: 6%;
+    z-index: 1;
+}
+
+.background{
     background-image: url(../images/img1.jpeg);
-    height: 100vh;
+    height: 120vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    background-attachment: fixed;
 }
+
+
 
 /*design de la navigation*/
 nav{
@@ -47,6 +76,9 @@ nav{
     width: 100%;
     max-width: 20%;
     height: auto;
+}
+.menu_logo:hover {
+    filter: invert(4%) sepia(100%) saturate(2511%) hue-rotate(353deg) brightness(104%) contrast(107%);
 }
 
 nav li{
@@ -72,6 +104,8 @@ nav ul::after{
     display: none;
     box-shadow: rgba(0, 0, 0, 0.74) 2px 1px ;
     background-color: #38445477;
+    border: black 1px solid;
+    border-radius: 20px;
     position: absolute;
     z-index: 1000;
 }
@@ -97,35 +131,64 @@ nav li:hover .sous{
 
 /* design de la partie introduction*/
 .titre{
-    font-size: 12vw;
+    font-size: 10vw;
     text-align: center;
 }
 
 .texte{
     padding: 0 10vw;
     text-align: center;
-    font-size: 3vw;
+    font-size: 1.5rem;
+}
+#intro{
+    padding-top: 20vh;
+}
+.mask{
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.logo1{
+    width: 40vw;
+    filter: invert(98%) sepia(0%) saturate(7484%) hue-rotate(28deg) brightness(105%) contrast(101%);
 }
 
-/*design de la partie notre equipe*/
+/*desig de la partie scroll*/
+.scroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    width: 188%;
+    top: 20%;
+    z-index: 3;
+}
+.scroll .social{
+    margin-top: 15px;
+}
+.scroll:hover {
+    filter: invert(4%) sepia(100%) saturate(2511%) hue-rotate(353deg) brightness(104%) contrast(107%);
+}
+
+/*design de la partie card*/
 .img{
-    width: 40vw;
-    height: 80vh;
-    border-radius: 50%;
-    overflow: hidden;
+    width: 30%  
 }
 
 #equipe{
-    padding-top: 80vh;
+    padding-top: 50vh;
 }
-
 .card{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    margin: 0;
+    padding-bottom: 20vh;
 }
+
 .texte-card{
     font-size: 3vw;
     margin: 5px;
@@ -141,5 +204,73 @@ nav li:hover .sous{
 
 .bouton:hover{
     color: var(--yellow-color);
-    background-color: rgba(0, 0, 0, 0.527);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*design de la partie footer*/
+footer{
+    background-color: #030508fa;
+    background-size: cover;
+    padding: 50px 0;
+}
+#foot{
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#foot .section{
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+@media screen and (max-width:768px) {
+    .section{
+        flex-basis: 100%;
+    }
+
+}
+#logo_foot{
+    margin-left: 13vh;
+}
+
+#contact p{
+    font-size: 1.7em;
+}
+#contact #name,#contact #mail, #mail2 {
+    background-color: var(--grey-color);
+    width: 90%;
+    border: var(--white-colorr) 1px solid;
+    border-radius: 10px;
+    height: 5vh;
+    margin: 10px;
+}
+input[type="submit"]{
+    background-color: var(--red-color);
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    color: var(--white-color);
+    border-radius: 10px;
+    margin-left: 25%;
+}
+textarea{
+    background-color: var(--grey-color);
+    width: 100%;
+    border: var(--white-colorr) 1px solid;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    color: var(--white-color);
+}
+
+h3{
+    font-size: 1.5em;
 }

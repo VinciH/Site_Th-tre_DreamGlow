@@ -1,76 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DreamGlow</title>
-    <link rel="stylesheet" href="./assets/css/acceuil.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DreamGlow</title>
+        <link rel="stylesheet" href="./assets/css/acceuil.css">
+    </head>
     <body>
-        <header>
-            <nav class="container">
-                <a href="index.html">
-                    <img src="assets/logos/DreamGlow (2).ico" alt="logo" class="dreamglow_logo">
-                </a>
-                <li>
-                    <img src="assets/logos/barre de menu.ico" alt="" class="menu_logo">
-                    <ul class="sous">
-                        <li><a href="#">PROGRAMME</a></li>
-                        <li><a href="#">BILLETERIE</a></li>
-                        <li><a href="#">GALLERIE</a></li>
-                        <li><a href="#">A PROPOS</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                    </ul>
-                </li>
-            </nav>
-        </header>
-        <main>
-            <div id="intro">
-                <h1 class="titre">DreamGlow</h1>
-                <p class="texte">Explorez le th&eacute;&acirc;tre sous une nouvelle lumi&egrave;re avec DreamGlow. Joignez-vous &agrave; nous pour une aventure artistique unique, o&ugrave; chaque acte est une c&eacute;l&eacute;bration de la cr&eacute;ativit&eacute;. </p>
+        <div class="up-bar"></div>
+        <div class="left-bar"></div>
+        <div class="right-bar"></div>
+        <div class="background">
+            <header>
+                <nav class="container">
+                    <a href="index.html">
+                        <img src="assets/logos/DreamGlow (2).ico" alt="logo" class="dreamglow_logo">
+                    </a>
+                    <li>
+                        <img src="assets/logos/barre de menu.ico" alt="" class="menu_logo">
+                        <ul class="sous">
+                            <li><a href="#">PROGRAMME</a></li>
+                            <li><a href="#">BILLETERIE</a></li>
+                            <li><a href="#">GALLERIE</a></li>
+                            <li><a href="#">A PROPOS</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </li>
+                </nav>
+            </header>
+            <!--Les logo pour le scrolling-->
+            <div class="scroll">
+                <a href="#"><img class="social" src="./assets/Logos/icon_facebook.png" alt=""></a>
+                <a href="#"><img class="social" src="./assets/Logos/icon_ig.png" alt=""></a>
+                <a href="#"><img class="social" src="./assets/Logos/icon_tw.png" alt=""></a>
             </div>
-            <div class="card" id="equipe">
-                <img src="assets/images/img2.jpeg" alt="" class="img">
-                <p class="texte-card">Notre &eacute;quipe</p>
-                <button class="bouton">D&eacute;couvrir maintenant</button>
-            </div>
-            <div class="card" id="dernier">
-                <img src="assets/images/img3.jpeg" alt="" class="img">
-                <p class="texte-card">Notre derni&egrave;re performance</p>
-                <button class="bouton">D&eacute;couvrir maintenant</button>
-            </div>
-            <div class="card" id="prochain">
-                <img src="assets/images/img4.jpeg" alt="" class="img">
-                <p class="texte-card">Notre prochain show</p>
-                <button class="bouton">D&eacute;couvrir maintenant</button>
-            </div>
-        </main>
-        <footer>
-            <div>
-                <a href="index.html"><img src="" alt="logo"></a>
-                <p>adresse</p>
-                <p>e-mail</p>
-            </div>
-            <div>
-                <p>Contactez-nous</p>
-                <form method="post" action="form.php">
-                    <div>
-                        <label for="name">Votre nom</label>
-                        <input type="text" id="name">
+            <main>
+                <div id="intro">
+                    <h1 class="titre">DreamGlow</h1>
+                    <p class="texte">Explorez le th&eacute;&acirc;tre sous une nouvelle lumi&egrave;re avec DreamGlow. Joignez-vous &agrave; nous pour une aventure artistique unique, o&ugrave; chaque acte est une c&eacute;l&eacute;bration de la cr&eacute;ativit&eacute;. </p>
+                </div>
+                <div  class="mask"><img src="assets/logos/logo1.ico" alt="" class="logo1"></div>
+                <div class="card" id="equipe">
+                    <img src="assets/images/img2.png" alt="" class="img">
+                    <p class="texte-card">Notre &eacute;quipe</p>
+                    <button class="bouton">D&eacute;couvrir maintenant</button>
+                </div>
+                <div class="card" id="dernier">
+                    <img src="assets/images/img3.png" alt="" class="img">
+                    <p class="texte-card">Notre derni&egrave;re performance</p>
+                    <button class="bouton">D&eacute;couvrir maintenant</button>
+                </div>
+                <div class="card" id="prochain">
+                    <img src="assets/images/img4.png" alt="" class="img">
+                    <p class="texte-card">Notre prochain show</p>
+                    <button class="bouton">D&eacute;couvrir maintenant</button>
+                </div>
+            </main>
+            <footer>
+                <div class="container" id="foot">
+                    <div class="section">
+                        <a href="index.html"><img src="assets/logos/DreamGlow (2).ico" alt="logo" class="dreamglow_logo" id="logo_foot"></a>
+                        <p>401 Rue imaginaire</p>
+                        <p>dreamglow@gmail.com</p>
                     </div>
-                    <div>
-                        <label for="mail">Votre nom</label>
-                        <input type="email" id="mail">
+                    <div class="section" id="contact">
+                        <p>Contactez-nous</p>
+                        <form method="post" action="form.php">
+                            <div>
+                                <label for="name">Votre nom</label>
+                                <input type="text" id="name">
+                            </div>
+                            <div>
+                                <label for="mail">Votre email</label>
+                                <input type="email" id="mail">
+                            </div>
+                            <div>
+                                <textarea name="comment" id="message" cols="30" rows="10">Message</textarea>
+                            </div>
+                            <div>
+                                <input type="submit" value="Envoyer">
+                            </div>
+                        </form>
                     </div>
-                    <div>
-                        <textarea name="comment" id="message" cols="30" rows="10">Message</textarea>
+                    <div class="section">
+                        <h3>Newsletter</h3>
+                        <p>Restez informé en entrant votre e-mail ici</p>
+                        <form action="form.php">
+                            <div>
+                                <label for="mail"></label>
+                                <input type="email" id="mail2">
+                            </div>
+                            <div>
+                                <input type="submit" value="s'abonnez">
+                            </div>
+                        </form>
                     </div>
-                    <div>
-                        <input type="submit" value="Envoyer">
-                    </div>
-                </form>
-            </div>
-        </footer>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
