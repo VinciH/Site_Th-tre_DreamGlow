@@ -14,12 +14,132 @@
 }
 
 .container{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
 body{
     background-color: var(--blue-color);
+    color: var(--white-color);
+    background-image: url(../images/img1.jpeg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/*section navigation*/
+/*design de la navigation*/
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.dreamglow_logo{
+    width: 100%;
+    max-width: 50%;
+    height: auto;
+}    
+
+.menu_logo{
+    width: 100%;
+    max-width: 20%;
+    height: auto;
+}
+
+nav li{
+    list-style-type: none;
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*design de la barre de menu*/
+.sous{
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.74) 2px 1px ;
+    background-color: #38445477;
+    position: absolute;
+    z-index: 1000;
+}
+
+nav li:hover .sous{
+    display: block;
+}
+
+.sous li{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+ 
+.sous a{
+    padding: 5px;
+    border-bottom: none;
+}
+.sous a:hover{
+    background-color: #384454a4;
+    color: var(--yellow-color);
+}
+
+/* design de la partie introduction*/
+.titre{
+    font-size: 12vw;
+    text-align: center;
+}
+
+.texte{
+    padding: 0 10vw;
+    text-align: center;
+    font-size: 3vw;
+}
+
+/*design de la partie notre equipe*/
+.img{
+    width: 40vw;
+    height: 80vh;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#equipe{
+    padding-top: 80vh;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.texte-card{
+    font-size: 3vw;
+    margin: 5px;
+}
+.bouton{
+    padding: 10px;
+    font-size: 2vw;
+    margin: 15px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    border-radius: 20%;
+}
+
+.bouton:hover{
+    color: var(--yellow-color);
+    background-color: rgba(0, 0, 0, 0.527);
+}
