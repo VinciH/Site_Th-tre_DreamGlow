@@ -12,51 +12,25 @@
     --red-color: #a7001f5d;    
     --white-color: #FFFFFF;    
 }
-
-.container{
-    width: 80%;
-    margin: 0 auto;
-}
-
 body{
-    background-color: var(--blue-color);
-    color: var(--white-color);
-}
-.up-bar {
-    border-top: #bcbbbd17 4.5px solid;
-    position: relative;
-    top: 20vh;
-    width: 88%;
-    margin: 0 auto ;
-    z-index: 1;
-}
-.left-bar {
-    border-left: #bcbbbd17 3px solid;
-    position: fixed;
-    height: 800px;
-    left: 6%;
-    z-index: 1;
-}
-.right-bar {
-    border-right: #bcbbbd17 3px solid;
-    position: fixed;
-    height: 800px;
-    right: 6%;
-    z-index: 1;
-}
-
-.background{
-    background-image: url(../images/img1.jpeg);
+    background-image: url(../images/img5.jpeg);
     height: 120vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     background-attachment: fixed;
+    color: var(--white-color);
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
 }
 
-
-
+h1{
+    font-size: 5rem;
+    text-align:center;
+}
 /*design de la navigation*/
 nav{
     display:flex;
@@ -128,32 +102,6 @@ nav li:hover .sous{
     background-color: #384454a4;
     color: var(--yellow-color);
 }
-
-/* design de la partie introduction*/
-.titre{
-    font-size: 10vw;
-    text-align: center;
-}
-
-.texte{
-    padding: 0 10vw;
-    text-align: center;
-    font-size: 1.5rem;
-}
-#intro{
-    padding-top: 20vh;
-}
-.mask{
-    display: flex;
-    justify-content: center;
-    justify-content: center;
-    padding-top: 50px;
-}
-.logo1{
-    width: 40vw;
-    filter: invert(98%) sepia(0%) saturate(7484%) hue-rotate(28deg) brightness(105%) contrast(101%);
-}
-
 /*desig de la partie scroll*/
 .scroll {
     display: flex;
@@ -162,8 +110,7 @@ nav li:hover .sous{
     flex-direction: column;
     position: fixed;
     width: 187%;
-    top: 15%;
-    z-index: 3;
+    top: 20%;
 }
 .scroll .social{
     margin-top: 15px;
@@ -176,40 +123,6 @@ nav li:hover .sous{
     width: 5rem;
     filter: invert(98%) sepia(0%) saturate(7484%) hue-rotate(28deg) brightness(105%) contrast(101%);
     margin-right: 10px;
-}
-/*design de la partie card*/
-.img{
-    width: 30%  
-}
-
-#equipe{
-    padding-top: 50vh;
-}
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding-bottom: 20vh;
-}
-
-.texte-card{
-    font-size: 3vw;
-    margin: 5px;
-}
-.bouton{
-    padding: 10px;
-    font-size: 2vw;
-    margin: 15px;
-    background-color: var(--black-color);
-    color: var(--white-color);
-    border-radius: 20%;
-}
-
-.bouton:hover{
-    color: var(--yellow-color);
-    background-color: rgba(0, 0, 0, 0.2);
 }
 
 /*design de la partie footer*/
@@ -278,4 +191,32 @@ textarea{
 
 h3{
     font-size: 1.5em;
+}
+
+
+/*1ere section*/
+section{
+    display: flex;
+    width: 60%;
+    margin: 150px auto;
+    background-color: var(--blue-color);
+    padding: 10px;
+    border: var(--yellow-color) 2px solid;
+    border-radius: 40px ;
+}
+.img{
+    width: 10rem;
+    margin-left: 80px;  
+}
+section h2{
+    font-size: 2.1rem;
+}
+section h3 {
+    font-size: 2rem;
+}
+.sous-section2{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
