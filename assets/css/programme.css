@@ -31,6 +31,10 @@ h1{
     font-size: 5rem;
     text-align:center;
 }
+.titre{
+    text-align: center;
+    padding-top: 50px;
+}
 /*design de la navigation*/
 nav{
     display:flex;
@@ -194,29 +198,88 @@ h3{
 }
 
 
-/*1ere section*/
+/*design des sections*/
 section{
     display: flex;
     width: 60%;
-    margin: 150px auto;
-    background-color: var(--blue-color);
+    margin: 150px  auto 0;
+    background-color: rgba(0, 0, 0, 0.281);
     padding: 10px;
     border: var(--yellow-color) 2px solid;
     border-radius: 40px ;
 }
 .img{
-    width: 10rem;
-    margin-left: 80px;  
+    width: 10rem; 
 }
 section h2{
     font-size: 2.1rem;
 }
 section h3 {
-    font-size: 2rem;
+    font-size: 1.3rem;
+}
+.info-container{
+    display: flex;
+    flex-direction: column;
+}
+.info{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+.info p{
+    padding-left: 10px;
+}
+.sous-section1{
+    width: 60%;
+    padding: 30px;
+}
+.sous-section1 p{
+    text-align: justify;
 }
 .sous-section2{
-    display:flex ;
+    padding: 20px;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+@media screen and (max-width:1200px) {
+    section{
+        display: block;
+        margin: 100px auto;
+    }
+    .sous-section1{
+        width: 100%;
+        padding: 10px;
+    }
+    .info{
+        display: flex;
+        align-items: center;
+        padding-left: 0;
+    }
+}
+.icon{
+    width: 1.5rem;
+    filter: invert(98%) sepia(0%) saturate(7484%) hue-rotate(28deg) brightness(105%) contrast(101%);
+}
+
+/*design du bouton de réservation*/
+.bouton{
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+button{
+    padding: 10px;
+    background-color: transparent;
+    border: var(--white-color) 3px solid;
+    border-radius: 20px;
+    color: var(--white-color);
+    font-size: 1.5rem;
+}
+button:hover{
+    color: var(--yellow-color);
+    border: var(--yellow-color) 3px solid;
 }

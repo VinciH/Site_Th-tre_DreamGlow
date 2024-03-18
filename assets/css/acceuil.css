@@ -202,8 +202,9 @@ nav li:hover .sous{
     padding: 10px;
     font-size: 2vw;
     margin: 15px;
-    background-color: var(--black-color);
+    background-color: transparent;
     color: var(--white-color);
+    border: var(--white-color) 3px solid;
     border-radius: 20%;
 }
 
