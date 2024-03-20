@@ -27,6 +27,29 @@ body{
     margin: 0 auto;
 }
 
+.up-bar {
+    border-top: #bcbbbd17 4.5px solid;
+    position: relative;
+    top: 20vh;
+    width: 88%;
+    margin: 0 auto ;
+    z-index: 1;
+}
+.left-bar {
+    border-left: #bcbbbd17 3px solid;
+    position: fixed;
+    height: 800px;
+    left: 6%;
+    z-index: 1;
+}
+.right-bar {
+    border-right: #bcbbbd17 3px solid;
+    position: fixed;
+    height: 800px;
+    right: 6%;
+    z-index: 1;
+}
+
 h1{
     font-size: 5rem;
     text-align:center;

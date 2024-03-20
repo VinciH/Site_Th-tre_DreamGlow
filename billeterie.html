@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BILLETERIE</title>
+</head>
+<body>
+    <!--section navigation-->
+    <header>
+        <nav class="container">
+            <a href="index.html">
+                <img src="assets/logos/DreamGlow (2).ico" alt="logo" class="dreamglow_logo">
+            </a>
+            <li>
+                <img src="assets/logos/barre de menu.ico" alt="" class="menu_logo">
+                <ul class="sous">
+                    <li><a href="programme.html">PROGRAMME</a></li>
+                    <li><a href="#">BILLETERIE</a></li>
+                    <li><a href="#">GALLERIE</a></li>
+                    <li><a href="#">A PROPOS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </li>
+        </nav>
+    </header>
+    <!--section Formulaire-->
+    <h1>R&eacute;servez votre place pour assister &agrave; notre show</h1>
+    <img src="assets/images/billet.png" alt="">
+    <div>
+        <form action="">
+            <div>
+                <label for="name_presentation">Nom de la pr&eacute;sentation</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="name">Nom et pr&eacute;nom</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="mail">Email</label>
+                <input type="email" id="mail">
+            </div>
+            <div>
+                <label for="phone">T&eacute;l&eacute;phone</label>
+                <input type="tel" id="phone">
+            </div>
+            <div>
+                <label for="number">Nombre de place</label>
+                <input type="number" id="number">
+            </div>
+            <div>
+                <input type="submit" value="R&eacute;server">
+            </div>
+        </form>
+    </div>
+    <!--Section footer-->
+    <footer>
+        <div class="container" id="foot">
+            <div class="section">
+                <a href="index.html"><img src="assets/logos/DreamGlow (2).ico" alt="logo" class="dreamglow_logo" id="logo_foot"></a>
+                <p>Théatre DreamGlow,401 Rue imaginaire</p>
+                <p>dreamglow@gmail.com</p>
+            </div>
+            <div class="section" id="contact">
+                <p>Contactez-nous</p>
+                <form method="post" action="form.php">
+                    <div>
+                        <label for="name">Votre nom</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div>
+                        <label for="mail">Votre email</label>
+                        <input type="email" id="mail">
+                    </div>
+                    <div>
+                        <textarea name="comment" id="message" cols="30" rows="10">Message</textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Envoyer">
+                    </div>
+                </form>
+            </div>
+            <div class="section">
+                <h3>Newsletter</h3>
+                <p>Restez informé en entrant votre e-mail ici</p>
+                <form action="form.php">
+                    <div>
+                        <label for="mail"></label>
+                        <input type="email" id="mail2">
+                    </div>
+                    <div>
+                        <input type="submit" value="s'abonnez">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
