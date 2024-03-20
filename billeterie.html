@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BILLETERIE</title>
+    <link rel="stylesheet" href="assets/css/billeterie.css">
 </head>
 <body>
     <!--section navigation-->
@@ -26,33 +27,36 @@
     </header>
     <!--section Formulaire-->
     <h1>R&eacute;servez votre place pour assister &agrave; notre show</h1>
-    <img src="assets/images/billet.png" alt="">
-    <div>
-        <form action="">
-            <div>
-                <label for="name_presentation">Nom de la pr&eacute;sentation</label>
-                <input type="text" id="name">
-            </div>
-            <div>
-                <label for="name">Nom et pr&eacute;nom</label>
-                <input type="text" id="name">
-            </div>
-            <div>
-                <label for="mail">Email</label>
-                <input type="email" id="mail">
-            </div>
-            <div>
-                <label for="phone">T&eacute;l&eacute;phone</label>
-                <input type="tel" id="phone">
-            </div>
-            <div>
-                <label for="number">Nombre de place</label>
-                <input type="number" id="number">
-            </div>
-            <div>
-                <input type="submit" value="R&eacute;server">
-            </div>
-        </form>
+    <div class="form_container">
+        <img src="assets/images/billet.png" alt="" class="billet">
+        <img src="assets/images/billet vertical.png" alt="" class="billet_v">
+        <div class="formulaire">
+            <form action="">
+                <div class="content">
+                    <label for="name_presentation">Nom de la pr&eacute;sentation</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="content">
+                    <label for="name">Nom et pr&eacute;nom</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="content">
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail">
+                </div>
+                <div class="content">
+                    <label for="phone">T&eacute;l&eacute;phone</label>
+                    <input type="tel" id="phone">
+                </div>
+                <div class="content">
+                    <label for="number">Nombre de place</label>
+                    <input type="number" id="number">
+                </div>
+                <div class="content">
+                    <input type="submit" value="R&eacute;server">
+                </div>
+            </form>
+        </div>
     </div>
     <!--Section footer-->
     <footer>

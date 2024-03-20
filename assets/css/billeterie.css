@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --grey-color: #3844542f;
+    --blue-color: #0a101b;    
+    --black-color: #0C0F0A;    
+    --yellow-color: #FCFE19;    
+    --red-color: #a7001f5d;    
+    --white-color: #FFFFFF;    
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+h1{
+    font-size: 5rem;
+    text-align:center;
+    padding-bottom: 1rem;
+    color: var(--white-color);
+}
+body{
+    background-image: url(../images/img12.jpeg);
+    height: 120vh;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    z-index: 2;
+}
+/*design de la navigation*/
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.37);
+}
+.dreamglow_logo{
+    width: 100%;
+    max-width: 50%;
+    height: auto;
+}    
+
+.menu_logo{
+    width: 100%;
+    max-width: 3rem;
+    height: auto;
+}
+.menu_logo:hover {
+    filter: invert(4%) sepia(100%) saturate(2511%) hue-rotate(353deg) brightness(104%) contrast(107%);
+}
+
+nav li{
+    list-style-type: none;
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*design de la barre de menu*/
+.sous{
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.74) 2px 1px ;
+    background-color: #38445477;
+    border: black 1px solid;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1000;
+}
+
+nav li:hover .sous{
+    display: block;
+}
+
+.sous li{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+ 
+.sous a{
+    padding: 5px;
+    border-bottom: none;
+}
+.sous a:hover{
+    background-color: #384454a4;
+    color: var(--yellow-color);
+}
+
+/*design de la partie footer*/
+footer{
+    background-color: #03050871;
+    background-size: cover;
+    padding: 50px 0;
+    color: var(--white-color);
+}
+#foot{
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#foot .section{
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+@media screen and (max-width:768px) {
+    .section{
+        flex-basis: 100%;
+    }
+
+}
+#logo_foot{
+    margin-left: 13vh;
+}
+
+#contact p{
+    font-size: 1.7em;
+}
+#contact #name,#contact #mail, #mail2 {
+    background-color: var(--grey-color);
+    width: 90%;
+    border: var(--white-colorr) 1px solid;
+    border-radius: 10px;
+    height: 5vh;
+    margin: 10px;
+}
+footer input[type="submit"]{
+    background-color: var(--red-color);
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    color: var(--white-color);
+    border-radius: 10px;
+    margin-left: 25%;
+}
+textarea{
+    background-color: var(--grey-color);
+    width: 100%;
+    border: var(--white-colorr) 1px solid;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    color: var(--white-color);
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+/*design de la carte de billet*/
+.billet_v{
+    display: none;
+}
+
+.form_container{
+    position: relative;
+    padding: 50px;
+}
+.billet{
+    max-width: 100%;
+    object-fit: contain;
+}
+.formulaire{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-20%, -50%);
+    z-index: 1;
+    color: var(--black-color);
+    padding-top: 40px;
+}
+
+/*design du formulaire*/
+input[type=text], input[type=email], input[type=tel], input[type=number]{
+    border: none;
+    border-bottom: 2px solid var(--black-color);
+    background-color: transparent;
+    width: 100%;
+    padding: 0 10px;
+}
+.content{
+    padding: 3px;
+}
+input[type=submit]{
+    border: none;
+    background-color: var(--black-color);
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 35%;
+    color: var(--white-color);
+}
+@media screen and (max-width:1200px) {
+    .billet_v{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        object-fit: contain;
+    }
+    .billet{
+        display: none;
+    }
+    .content{
+        padding: 20px;
+    }
+    .form_container{
+        position: relative;
+        padding: 0;
+    }
+
+}
+@media screen and (max-width:600px) {
+    .billet_v{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        object-fit: contain;
+    }
+    .billet{
+        display: none;
+    }
+    .content{
+        padding: 20px;
+    }
+    .formulaire{
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-20%, -50%);
+        z-index: 1;
+        color: var(--black-color);
+        padding-top: 40px;
+    }
+    .form_container{
+        position: relative;
+        padding: 0;
+    }
+}
