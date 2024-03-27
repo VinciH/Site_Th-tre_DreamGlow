@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --grey-color: #3844542f;
+    --blue-color: #0a101b;    
+    --black-color: #0C0F0A;    
+    --yellow-color: #FCFE19;    
+    --red-color: #a7001f5d;    
+    --white-color: #FFFFFF;    
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+body{
+    background-color: black;
+}
+
+/*design de la navigation*/
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.37);
+}
+.dreamglow_logo{
+    width: 100%;
+    max-width: 50%;
+    height: auto;
+}    
+
+.menu_logo{
+    width: 100%;
+    max-width: 3rem;
+    height: auto;
+}
+.menu_logo:hover {
+    filter: invert(4%) sepia(100%) saturate(2511%) hue-rotate(353deg) brightness(104%) contrast(107%);
+}
+
+nav li{
+    list-style-type: none;
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/*design de la barre de menu*/
+.sous{
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.74) 2px 1px ;
+    background-color: #38445477;
+    border: black 1px solid;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1000;
+}
+
+nav li:hover .sous{
+    display: block;
+}
+
+.sous li{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+ 
+.sous a{
+    padding: 5px;
+    border-bottom: none;
+}
+.sous a:hover{
+    background-color: #384454a4;
+    color: var(--yellow-color);
+}
+
+/*design de la partie footer*/
+footer{
+    background-color: #03050871;
+    background-size: cover;
+    padding: 50px 0;
+    color: var(--white-color);
+}
+#foot{
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#foot .section{
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+@media screen and (max-width:768px) {
+    .section{
+        flex-basis: 100%;
+    }
+
+}
+#logo_foot{
+    margin-left: 13vh;
+}
+
+#contact p{
+    font-size: 1.7em;
+}
+#contact #name,#contact #mail, #mail2 {
+    background-color: var(--grey-color);
+    width: 90%;
+    border: var(--white-colorr) 1px solid;
+    border-radius: 10px;
+    height: 5vh;
+    margin: 10px;
+}
+footer input[type="submit"]{
+    background-color: var(--red-color);
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    color: var(--white-color);
+    border-radius: 10px;
+    margin-left: 25%;
+}
+textarea{
+    background-color: var(--grey-color);
+    width: 100%;
+    border: var(--white-colorr) 1px solid;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    color: var(--white-color);
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+/*design production passées*/
+.img23{
+    width: 15rem;
+    height: 25rem;
+}
+
+.gallerie{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallerie .section1{
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    color: var(--white-color);
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:768px) {
+    .section1{
+        flex-basis: 100%;
+    }
+
+}
+
+/*design de la partie intro de la gallerie*/
+#gallerie_intro p{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+/*design de la partie gallerie content*/
+#gallerie-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 70%;
+    align-items: flex-start;
+}
+
+#gallerie-content .box{
+    flex: 1 1 33.33%;
+    max-width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:650px) {
+    #gallerie-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    #gallerie-content .box{
+        flex: 1;
+        max-width: 50%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}
+
+/*design des box*/
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.box .content{
+    color: var(--white-color);
+    position: absolute;
+    height: 16rem;
+    width: 16rem;
+    text-align: center;
+    display: none;
+    transition: 0.5s;
+    background-color: #0c0f0ada;
+    padding: 10px;
+}
+.img_box{
+    width: 16rem;
+    height: 16rem;
+}
+.box h2{
+    font-size: 1.3rem;
+}
+.box p{
+    font-size: 0.9rem;
+}
+.box:hover{
+    box-shadow: 0 0 10px var(--white-color);
+} 
+.box:hover .content{
+    display: block;
+    z-index: 1;
+}
+
+/*Section Coulisse et répétition*/
+.titre_coulisse{
+    color: var(--yellow-color);
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 50px;
+}
+.container_carousel img{
+    width: 35rem;
+    height: 25rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container_carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+.carousel{
+    position: relative;
+    width: 35rem;
+    height: 25rem;
+    overflow: hidden;
+    box-shadow: 0 0 10px var(--yellow-color);
+}
+
+.carousel_content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    top: 0;
+    left: 100%;
+}
+.carousel_content div{
+    height: 100%;
+}
+.carousel_content.active{
+    left: 0;
+    transition: all 0.3s ease-out;
+}
+
+/*design de la Section notre équipe*/
+.card img{
+    width: 15rem;
+    height: 15rem;
+    margin: 5px;
+}
+.card h3{
+    color: var(--white-color);
+    text-align: center;
+}
+.card{
+    width: 16rem;
+    height: 22rem;
+    background-color: var(--grey-color);
+    border-radius: 20px;
+    margin: 10px;
+    border: 2px solid var(--red-color);
+    box-shadow: 0 0 10px var(--red-color);
+}
+.slide_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.slide .image_list{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 30px;
+}
+
+.slide .image_list::-webkit-scrollbar{
+    display: none;
+}
+#slide_container{
+    max-width: 1200px;
+    width: 95%;
+}
+.intro{
+    color: var(--white-color);
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.slide_scrollbar{
+    height: 24px;
+    width: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+}
+.scrollbar-track{
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    position: relative;
+    border-radius: 4px;
+}
+
+.slide_scrollbar:hover .scrollbar-track{
+    height: 4px;
+
+}
+.slide_scrollbar .scrollbar-thumb:active{
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+}
+.scrollbar-thumb{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: var(--blue-color);
+    border-radius: inherit;
+    cursor: grab;
+}
+.scrollbar-thumb::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+}
+.slide{
+    position: relative;
+}
+
+.slide_button{
+    width: 2.5rem;
+    filter: invert(98%) sepia(0%) saturate(7484%) hue-rotate(28deg) brightness(105%) contrast(101%);
+    box-shadow: 0 0 25px var(--red-color);
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+}
+.slide_button:hover{
+    filter: invert(10%) sepia(100%) saturate(2511%) hue-rotate(353deg) brightness(104%) contrast(107%);
+    box-shadow: none;
+}
+
+.slide_button#prev_slide{
+    left: -24px;
+    display: none;
+}
+.slide_button#next_slide{
+    right: -24px ;
+}
+button{
+    background: none;
+}
+
+@media (max-width: 1023px){
+    .slide_button{
+        display: none!important;
+    }
+    .image_list{
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    .card{
+        width: 280px;
+        height: 380px;
+    }
+    .scrollbar-thumb{
+        width: 20%;
+    }
+}

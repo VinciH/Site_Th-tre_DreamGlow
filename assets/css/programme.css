@@ -294,6 +294,9 @@ section h3 {
     justify-content: center;
     padding: 100px 0;
 }
+a{
+    text-decoration: none;
+}
 button{
     padding: 10px;
     background-color: transparent;
