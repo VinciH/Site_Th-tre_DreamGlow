@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body>
+    <!--section navigation-->
+    <header>
+        <nav class="container">
+            <a href="index.html">
+                <img src="assets/logos/DreamGlow (2).ico" alt="logo" class="dreamglow_logo">
+            </a>
+            <li>
+                <img src="assets/logos/barre de menu.ico" alt="" class="menu_logo">
+                <ul class="sous">
+                    <li><a href="programme.html">PROGRAMME</a></li>
+                    <li><a href="billeterie.html">BILLETERIE</a></li>
+                    <li><a href="gallerie.html">GALLERIE</a></li>
+                    <li><a href="apropos.html">A PROPOS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </li>
+        </nav>
+    </header>
+    <!--Section contact-->
+    <div id="contact">
+        <div class="info">
+            <img src="assets/logos/mail.ico" alt="" class="img1">
+            <p>dreamglow@gmail.com</p>
+        </div>
+        <div class="info">
+            <img src="assets/logos/lieu.ico" alt="" class="img2">
+            <p>Théatre DreamGlow,401 Rue imaginaire</p>
+        </div>
+        <p>Contactez-nous</p>
+        <form method="post" action="form.php">
+            <div class="form">
+                <label for="name">Votre nom</label>
+                <input type="text" id="name">
+            </div>
+            <div class="form">
+                <label for="mail">Votre email</label>
+                <input type="email" id="mail">
+            </div>
+            <div class="form">
+                <textarea name="comment" id="message" cols="30" rows="10">Message</textarea>
+            </div>
+            <div class="form" id="submit">
+                <input type="submit" value="Envoyer">
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
