@@ -1,4 +1,50 @@
-*{
+
+@font-face {
+    font-family: Adorable Handmade;
+    src: url(../police/Adorable\ Handmade.ttf);
+}
+@font-face {
+    font-family: Bonfire Free;
+    src: url(../police/Bonfire\ Free.ttf);
+}
+@font-face {
+    font-family: BEYNO;
+    src: url(../police/BEYNO.otf);
+}
+@font-face {
+    font-family: Cathylise Janetson;
+    src: url(../police/Cathylise\ Janetson.otf);
+}
+@font-face {
+    font-family: Montserrat-VariableFont_wght;
+    src: url(../police/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: PantheraRegular-MVZ9J;
+    src: url(../police/PantheraRegular-MVZ9J.ttf);
+}
+@font-face {
+    font-family: Spring House;
+    src: url(../police/Spring\ House.otf);
+}
+@font-face {
+    font-family: TransformaScript-Medium;
+    src: url(../police/TransformaScript-Medium.ttf);
+}
+@font-face {
+    font-family: Trushdex;
+    src: url(../police/Trushdex.ttf);
+}
+
+h1{
+    font-family: TransformaScript-Medium;
+}
+h2{
+    font-family: Cathylise Janetson;
+}
+p{
+    font-family: Montserrat-VariableFont_wght;
+}*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,7 +63,7 @@
     width: 80%;
     margin: 0 auto;
 }
-h1{
+h2{
     font-size: 5rem;
     text-align:center;
     padding-bottom: 1rem;
