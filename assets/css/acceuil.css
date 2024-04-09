@@ -17,7 +17,9 @@
     width: 80%;
     margin: 0 auto;
 }
-
+main, footer{
+    z-index: 4;
+}
 body{
     background-color: var(--blue-color);
     color: var(--white-color);
@@ -163,7 +165,6 @@ nav li:hover .sous{
     position: fixed;
     width: 187%;
     top: 15%;
-    z-index: 3;
 }
 .scroll .social{
     margin-top: 15px;
@@ -198,7 +199,7 @@ nav li:hover .sous{
     font-size: 3vw;
     margin: 5px;
 }
-.bouton{
+.bouton, .bouton1{
     padding: 10px;
     font-size: 2vw;
     margin: 15px;
@@ -208,11 +209,103 @@ nav li:hover .sous{
     border-radius: 20%;
 }
 
-.bouton:hover{
+.bouton:hover, .bouton1:hover{
     color: var(--yellow-color);
     background-color: rgba(0, 0, 0, 0.2);
 }
+.bouton_container{
+    z-index: 2;
+}
 
+/*design de la partie pop-up*/
+.bouton_pop{
+    position: absolute;
+    left: 38%;
+}
+.pop-up img, .pop-up1 img{
+    width: 20rem;
+    border-radius: 50%;
+}
+.pop-up1, .pop-up{
+    width: 30rem;
+    height: 0rem;
+    padding: 10px;
+    background-color: var(--black-color);
+    border-radius: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    opacity: 0;
+    top: -200%;
+    transform: translate(-50%,-50%) scale(0.5);
+    transition: opacity 300ms ease-in-out,
+                top 1000ms ease-in-out,
+                transform 1000ms ease-in-out;
+}
+.pop-up.active , .pop-up1.active{
+    opacity: 1;
+    height: 40rem;
+    top: 50%;
+    z-index: 4;
+    transform: translate(0,-72%) scale(1);
+    transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
+}
+.titre_pop{
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+#bouton_reserve{
+    margin: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+#bouton_retour, #bouton_retour1{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid var(--white-color);
+    border-radius: 50%;
+    background: none;
+    color: var(--white-color);
+    outline: none;
+    transition: all 300ms ease-in-out;
+}
+#bouton_reserve:hover{
+    background: none;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+}
+#bouton_retour:hover{
+    border: 2px solid var(--white-color);
+    cursor: pointer;
+}
+
+.pop-up > div ,.pop-up1 > div {
+    position:relative;
+    top: 10px;
+    opacity: 0;
+}
+.pop-up.active > div, .pop-up1.active > div {
+    top: 0px;
+    opacity: 1;
+}
+.pop-up.active .img_pop,.pop-up1.active .img_pop{
+    transition: all 300ms ease-in-out 250ms;
+}
+.pop-up.active .titre_pop, .pop-up1.active .titre_pop{
+    transition: all 300ms ease-in-out 350ms;
+}
+.pop-up.active .descri_pop, .pop-up1.active .descri_pop{
+    transition: all 300ms ease-in-out 450ms;
+}
+.pop-up.active .reserver_pop, .pop-up1.active .reserver_pop{
+    transition: all 300ms ease-in-out 550ms;
+}
+.pop-up.active .retour_pop, .pop-up1.active .retour_pop{
+    transition: all 300ms ease-in-out 650ms;
+}
 /*design de la partie footer*/
 footer{
     background-color: #030508fa;
