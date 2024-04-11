@@ -1,15 +1,4 @@
-@font-face {
-    font-family: Adorable Handmade;
-    src: url(../police/Adorable\ Handmade.ttf);
-}
-@font-face {
-    font-family: Bonfire Free;
-    src: url(../police/Bonfire\ Free.ttf);
-}
-@font-face {
-    font-family: BEYNO;
-    src: url(../police/BEYNO.otf);
-}
+/*typographie*/
 @font-face {
     font-family: Cathylise Janetson;
     src: url(../police/Cathylise\ Janetson.otf);
@@ -18,31 +7,33 @@
     font-family: Montserrat-VariableFont_wght;
     src: url(../police/Montserrat-VariableFont_wght.ttf);
 }
+
 @font-face {
-    font-family: PantheraRegular-MVZ9J;
-    src: url(../police/PantheraRegular-MVZ9J.ttf);
-}
-@font-face {
-    font-family: Spring House;
-    src: url(../police/Spring\ House.otf);
-}
-@font-face {
-    font-family: TransformaScript-Medium;
-    src: url(../police/TransformaScript-Medium.ttf);
-}
-@font-face {
-    font-family: Trushdex;
-    src: url(../police/Trushdex.ttf);
+    font-family: The King Maker;
+    src: url(../police/The\ King\ Maker.ttf);
 }
 
+@font-face {
+    font-family: Simple Calligraphy;
+    src: url(../police/Simple\ Calligraphy.otf);
+}
+
+
 h1{
-    font-family: TransformaScript-Medium;
+    font-family: Simple Calligraphy;
+    font-weight: lighter;
 }
 h2{
     font-family: Cathylise Janetson;
+    font-weight: lighter;
+}
+h3{
+    font-family: The King Maker;
+    font-weight: lighter;
 }
 p{
     font-family: Montserrat-VariableFont_wght;
+    font-weight: lighter;
 }
 *{
     margin: 0;
@@ -232,9 +223,6 @@ footer{
     margin-left: 13vh;
 }
 
-#contact p{
-    font-size: 1.7em;
-}
 #contact #name,#contact #mail, #mail2 {
     background-color: var(--grey-color);
     width: 90%;
@@ -263,7 +251,7 @@ textarea{
 }
 
 h3{
-    font-size: 1.5em;
+    font-size: 1 rem;
 }
 
 
@@ -284,7 +272,7 @@ section h2{
     font-size: 2.1rem;
 }
 section h3 {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 .info-container{
     display: flex;
