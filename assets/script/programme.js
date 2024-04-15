@@ -1,0 +1,10 @@
+document.addEventListener("DOMContentLoaded",function(){
+    console.log('yessssss');
+    document.getElementsByClassName("bouton")[0].addEventListener("click",function(){
+        console.log('yessssss');
+        document.getElementsByClassName("pop-up")[0].classList.add("active");
+    });
+    document.getElementById("bouton_retour").addEventListener("click",function(){
+        document.getElementsByClassName("pop-up")[0].classList.remove("active");
+    });
+});
